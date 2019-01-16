@@ -1,0 +1,12 @@
+{
+  "name": "notifications-receiver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Michał Wadas <michalwadas@gmail.com>",
+  "license": "ISC"
+}
