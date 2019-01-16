@@ -2,11 +2,25 @@
   "name": "notifications-receiver",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node lib/index.js",
+    "build": "nexe -t win32-x86-10.13.0 -o notifications-receiver.exe ./lib/index.js"
   },
   "keywords": [],
   "author": "Michał Wadas <michalwadas@gmail.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.5.3",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "node-notifier": "^5.3.0"
+  },
+  "devDependencies": {
+    "nexe": "^2.0.0-rc.34"
+  },
+  "config": {
+    "port": 38043
+  }
 }
